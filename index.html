@@ -88,8 +88,12 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Little Lemon. All rights reserved.</p>
+                <p>&copy; <span id="year"></span> Little Lemon. All rights reserved.</p>
             </div>
+            <script>
+                const currentYear = new Date().getFullYear();
+                document.getElementById('year').textContent = currentYear;
+            </script>
         </footer>
      </body>
 </html>
